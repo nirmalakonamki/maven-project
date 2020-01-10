@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>devops1</groupId>
-  <artifactId>devops1</artifactId>
+  <groupId>devops2</groupId>
+  <artifactId>devops2</artifactId>
   <packaging>war</packaging>
   <version>1.1</version>
-  <name>devops1</name>
+  <name>devops2</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -56,7 +56,7 @@
   </dependencies>
 
   <build>
-    <finalName>devops1</finalName>
+    <finalName>devops2</finalName>
     <sourceDirectory>src/java</sourceDirectory>
     <outputDirectory>target/classes</outputDirectory>
     <plugins>
@@ -87,12 +87,12 @@
         <configuration>
           <path>/${project.build.finalName}</path>
           <!-- Embedded port -->
-          <port>8080</port>
+          <port>8082</port>
           <!--
             The default authentication credentials for remote deployment are username "admin" with no password To
             override credentials, define a server in settings.xml and activate it using the <server> element
           -->
-          <url>http://localhost:8080/manager</url>
+          <url>http://localhost:8082/manager</url>
         </configuration>
       </plugin>
     </plugins>
